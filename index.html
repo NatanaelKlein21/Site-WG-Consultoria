@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
     <title>WG Consultoria</title>
-     
-    <header>
+</head>
+
+<body>
+    <header><!-- CABECALHO -->
+        <!--logo-->
         <div class="container-logo">
-            <div class="logo-imagem">
-                <img src="imagens/Logo .png" alt="Logo">
-            </div>
+            <div class="logo-imagem"><img src="imagens/Logo.png" alt="Logo"></div>
+        </div>
 
-        </div><!-- container-logo-->
-
+        <!-- menu -->
         <div class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -21,24 +24,52 @@
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Conteudo</a></li>
-
             </ul>
+        </div>
 
-        </div><!-- menu -->
-
-
-
-
+        <!-- icones -->
+        <div class="icones">
+            <img src="imagens/facebook.png" alt="facebook" onclick="redirecionarParaFacebook()">
+            <img src="imagens/instagram.png" alt="instagram" onclick="redirecionarParaInstagram()">
+            <img src="imagens/linkedin.png" alt="linkedin" onclick="redirecionarParaLinkedin()">
+        </div>
     </header>
 
+    <!--ICONE WHATSAPP-->
+    <img class="icone-fixado" src="imagens/whatsapp.png" alt="Ícone Fixo" onclick="redirecionarParaWhatsApp()">
+
+    <!-- PAGINAS -->
+    <section>
+        <div class="pagina-home">
+            <h1>Consultoria com foco em prevenção e solução jurídica para empresas e negócios</h1>           
+            <div class="laranja"></div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="pagina-somos"></div>
+    </section>
+
+    <section class="video-section">
+        <video class="video-background" autoplay loop muted>
+            <!-- Substitua 'seu-video.mp4' pelo caminho do seu vídeo -->
+            <source src="imagens/video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="laranja2">
+            <div class="mensagem">
+                <h1>Serviços Oferecidos</h1>
+            </div>
+        </div>
+        
+    </section>
+
+    
 
 
 
 
 
-
-</head>
-<body>
     
 </body>
 </html>

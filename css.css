@@ -2,15 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 header{
     width: 100%;
-    background-color: #002B4B;
+    background-color: #002a4b40;
     display: flex;
     justify-content: space-around;  
     align-items: center;
-
+    position: fixed;
+    z-index: 1000; /* Valor alto para garantir que o header fique acima de outros elementos */
 }
 
 .logo-imagem img {
@@ -21,6 +23,8 @@ header{
 .menu li{
     display: inline-block;
     margin-left: 20px;
+    opacity: 10;
+    
 }
 
 .menu li a{
@@ -28,3 +32,117 @@ header{
     text-decoration: none;
     color: white;
 }
+
+.icones img{
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+}
+
+.icone-fixado {
+    position: fixed;
+    bottom: 40px;
+    margin-left: 20px;
+    right: 50px;
+    width: 50px;
+    z-index: 999; /* Certifique-se de que o ícone esteja acima de outros elementos */
+}
+
+.section {
+    padding: 20px;
+    background-color: #002a4b;
+    margin: 10px;
+}
+
+/* SEÇÃO HOME */
+.pagina-home {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;
+    height: 800px; 
+    background-image: url("imagens/fundo\ home.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.pagina-home h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #ffffff;
+    padding-left: 300px;
+    padding-right: 300px;
+    z-index: 3;
+}
+
+.laranja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2a25ca7;
+    z-index: 2;
+}
+
+/* SEÇÃO QUEM SOMOS */
+.pagina-somos{
+    display: flex;
+    width: 100%;
+    height: 768px; 
+    background-color: #002a4b;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* SEÇÃO SERVIÇOS */
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 768px;
+    background-color: #002a4b;
+    position: relative;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.mensagem {
+    text-align:start;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.mensagem h1 {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.laranja2 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2a25ca7;
+    z-index: 2;
+    
+}
+
