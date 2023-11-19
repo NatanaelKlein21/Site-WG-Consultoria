@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: #002B4B;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+
+}
+
+.logo-imagem img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
