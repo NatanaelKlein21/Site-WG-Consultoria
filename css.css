@@ -99,7 +99,7 @@ header{
 }
 
 /* SEÇÃO SERVIÇOS */
-.video-section {
+.servicos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,5 +144,36 @@ header{
     background-color: #f2a25ca7;
     z-index: 2;
     
+}
+
+.bla {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorias {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    align-items: center; /* Alinha os elementos no centro verticalmente */
+    gap: 60px; /* Adiciona espaço entre os elementos */
+    font-style:Tahoma;
+}
+
+.categorias h2 {
+    margin: 10; /* Remove a margem padrão dos elementos h2 */
+    color: #ffffff;
+    font-style:Tahoma;
 }
 
