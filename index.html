@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <script src="script.js"></script>
+    
     <title>WG Consultoria</title>
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 
 <body>
@@ -36,31 +39,167 @@
     </header>
 
     <!--ICONE WHATSAPP-->
-    <img class="icone-fixado" src="imagens/whatsapp.png" alt="Ícone Fixo" onclick="redirecionarParaWhatsApp()">
+    <!--<img class="icone-fixado" src="imagens/whatsapp.png" alt="Ícone Fixo" onclick="redirecionarParaWhatsApp()">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <div class="buttonzap">
+            <a href='https://api.whatsapp.com/message/GO2TMND4TM6EJ1?autoload=1&app_absent=0'class="icon" target='_blank'><i class="fab fa-whatsapp"></i></a>
+        </div>
 
     <!-- PAGINAS -->
     <section><!-- HOME -->
         <div class="pagina-home">
+            <video autoplay loop muted playsinline id="background-video">
+                <source src="imagens/video.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
             <h1>Consultoria com foco em prevenção e solução jurídica para empresas e negócios</h1>           
             <div class="laranja"></div>
         </div>
     </section>
     
     <section><!-- QUEM SOMOS -->
-        <div class="pagina-somos"></div>
+        <div class="pagina-somos">
+            <div class="heading">
+                <h1>About me</h1>
+            </div>
+            <div class="container2">
+                <div class="hero-content">
+                    <h2>Welcome to our WebSite</h2>
+                    <p>
+                        Muito textos aqui meu anjo
+                    </p>
+                    <button class="cta-button">Linkedin</button>
+                </div>
+                <div class="hero-image">
+                    <img src="imagens/Isabela.png" alt="">
+                </div>
+            </div>
+        
+        
+        
+        
+        
+            <!---    <div class="advogada1">
+                <h1>DENISE WEBER</h1>
+                <p>
+                Advogada (OAB/RS 131.438), graduada pela Universidade Feevale. Atua há mais de 15 anos com gestão e administração de negócios e pessoas.
+                </p>
+                <img class="imagem" src="imagens/Denise.png" alt="Denise">
+            </div>
+
+            <div class="advogada2">
+                <h1>ISAELA GUZZON</h1>
+                <p>
+                Advogada (OAB/RS 131.468), graduada e pós-graduanda pela Universidade Feevale. Atua com assessoria, planejamento e relacionamento instituicional. 
+                </p>
+                <img class="imagem" src="imagens/Isabela.png" alt="Isabela">
+            </div> -->
+        
+        </div> 
+        
     </section>
 
     <section class="servicos"> <!-- SERVIÇOS -->
-        <video class="video-background" autoplay loop muted>
-            <source src="imagens/video.mp4" type="video/mp4"></video>
-        <div class="laranja2">
-            <div class="mensagem"><h1>Serviços Oferecidos</h1></div>
-            <div class="categorias">
-                <h2>Direito Societario</h2>
-                <h2>Direito Contratual</h2>
-                <h2>Direito Cível e Comercial</h2>
-            </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <!---->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="imagens/1.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Direito Societário</h2>
+                            <p class="description">
+                                Descrição é o mesmo que detalhar, mostrar ou tornar conhecidas as características de algo ou alguém, 
+                                o que pode ser feito por via oral, textual ou visual. A descrição pode estar presente numa conversa, 
+                                num texto ou numa imagem. Com exemplos, fica mais fácil entender.
+                            </p>
+                            <button class="buttom">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="imagens/2.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Direito Contratual</h2>
+                            <p class="description">
+                                Descrição é o mesmo que detalhar, mostrar ou tornar conhecidas as características de algo ou alguém, 
+                                o que pode ser feito por via oral, textual ou visual. A descrição pode estar presente numa conversa, 
+                                num texto ou numa imagem. Com exemplos, fica mais fácil entender.
+                            </p>
+                            <button class="buttom">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="imagens/3.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Direito Cível e Comercial</h2>
+                            <p class="description">
+                                Descrição é o mesmo que detalhar, mostrar ou tornar conhecidas as características de algo ou alguém, 
+                                o que pode ser feito por via oral, textual ou visual. A descrição pode estar presente numa conversa, 
+                                num texto ou numa imagem. Com exemplos, fica mais fácil entender.
+                            </p>
+
+                            <button class="buttom">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="imagens/4.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Direito Sei La Oque</h2>
+                            <p class="description">
+                                Descrição é o mesmo que detalhar, mostrar ou tornar conhecidas as características de algo ou alguém, 
+                                o que pode ser feito por via oral, textual ou visual. A descrição pode estar presente numa conversa, 
+                                num texto ou numa imagem. Com exemplos, fica mais fácil entender.
+                            </p>
+
+                            <button class="buttom">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>  
+ 
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
         </div>
+            
     </section>
 
     
@@ -73,4 +212,8 @@
 
     
 </body>
+<!--Swiper JS-->
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
 </html>
